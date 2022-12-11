@@ -1,0 +1,5 @@
+if(EXISTS "/home/gg/gg/chps2022/TDs/c-/github/build/Test.exe[1]_tests.cmake")
+  include("/home/gg/gg/chps2022/TDs/c-/github/build/Test.exe[1]_tests.cmake")
+else()
+  add_test(Test.exe_NOT_BUILT Test.exe_NOT_BUILT)
+endif()
