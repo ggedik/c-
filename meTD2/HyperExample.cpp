@@ -50,7 +50,7 @@ int HyperExample::run(){ //redefining the function on this class
 
   Alien::Vector b(size, pm);
 
-  Alien::Hypre::LinearAlgebra algebra;
+  Alien::Hypre::LinearAlgebra algebra; /*HERE*/
 
   algebra.mult(A, xe, b);
 
@@ -66,7 +66,7 @@ int HyperExample::run(){ //redefining the function on this class
   //
   //  auto solver = Alien::Hypre::LinearSolver (options);
 
-  auto solver = Alien::Hypre::LinearSolver();
+  auto solver = Alien::Hypre::LinearSolver();  /*HERE*/
 
   solver.solve(A, b, x);
 

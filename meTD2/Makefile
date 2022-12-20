@@ -57,13 +57,23 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gg/gg/chps2022/TDs/meTD2
+CMAKE_SOURCE_DIR = /home/gg/gg/chps2022/TDs/c-/meTD2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gg/gg/chps2022/TDs/meTD2
+CMAKE_BINARY_DIR = /home/gg/gg/chps2022/TDs/c-/meTD2
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -87,9 +97,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gg/gg/chps2022/TDs/meTD2/CMakeFiles /home/gg/gg/chps2022/TDs/meTD2//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gg/gg/chps2022/TDs/c-/meTD2/CMakeFiles /home/gg/gg/chps2022/TDs/c-/meTD2//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gg/gg/chps2022/TDs/meTD2/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gg/gg/chps2022/TDs/c-/meTD2/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +139,139 @@ Main.exe/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.exe.dir/build.make CMakeFiles/Main.exe.dir/build
 .PHONY : Main.exe/fast
 
+#=============================================================================
+# Target rules for targets named Test.exe
+
+# Build rule for target.
+Test.exe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Test.exe
+.PHONY : Test.exe
+
+# fast build rule for target.
+Test.exe/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.exe.dir/build.make CMakeFiles/Test.exe.dir/build
+.PHONY : Test.exe/fast
+
+GenericExample.o: GenericExample.cpp.o
+.PHONY : GenericExample.o
+
+# target to build an object file
+GenericExample.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.exe.dir/build.make CMakeFiles/Main.exe.dir/GenericExample.cpp.o
+.PHONY : GenericExample.cpp.o
+
+GenericExample.i: GenericExample.cpp.i
+.PHONY : GenericExample.i
+
+# target to preprocess a source file
+GenericExample.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.exe.dir/build.make CMakeFiles/Main.exe.dir/GenericExample.cpp.i
+.PHONY : GenericExample.cpp.i
+
+GenericExample.s: GenericExample.cpp.s
+.PHONY : GenericExample.s
+
+# target to generate assembly for a file
+GenericExample.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.exe.dir/build.make CMakeFiles/Main.exe.dir/GenericExample.cpp.s
+.PHONY : GenericExample.cpp.s
+
+HyperExample.o: HyperExample.cpp.o
+.PHONY : HyperExample.o
+
+# target to build an object file
+HyperExample.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.exe.dir/build.make CMakeFiles/Main.exe.dir/HyperExample.cpp.o
+.PHONY : HyperExample.cpp.o
+
+HyperExample.i: HyperExample.cpp.i
+.PHONY : HyperExample.i
+
+# target to preprocess a source file
+HyperExample.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.exe.dir/build.make CMakeFiles/Main.exe.dir/HyperExample.cpp.i
+.PHONY : HyperExample.cpp.i
+
+HyperExample.s: HyperExample.cpp.s
+.PHONY : HyperExample.s
+
+# target to generate assembly for a file
+HyperExample.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.exe.dir/build.make CMakeFiles/Main.exe.dir/HyperExample.cpp.s
+.PHONY : HyperExample.cpp.s
+
+LocalLinearAlgebra.o: LocalLinearAlgebra.cpp.o
+.PHONY : LocalLinearAlgebra.o
+
+# target to build an object file
+LocalLinearAlgebra.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.exe.dir/build.make CMakeFiles/Main.exe.dir/LocalLinearAlgebra.cpp.o
+.PHONY : LocalLinearAlgebra.cpp.o
+
+LocalLinearAlgebra.i: LocalLinearAlgebra.cpp.i
+.PHONY : LocalLinearAlgebra.i
+
+# target to preprocess a source file
+LocalLinearAlgebra.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.exe.dir/build.make CMakeFiles/Main.exe.dir/LocalLinearAlgebra.cpp.i
+.PHONY : LocalLinearAlgebra.cpp.i
+
+LocalLinearAlgebra.s: LocalLinearAlgebra.cpp.s
+.PHONY : LocalLinearAlgebra.s
+
+# target to generate assembly for a file
+LocalLinearAlgebra.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.exe.dir/build.make CMakeFiles/Main.exe.dir/LocalLinearAlgebra.cpp.s
+.PHONY : LocalLinearAlgebra.cpp.s
+
+PETScExample.o: PETScExample.cpp.o
+.PHONY : PETScExample.o
+
+# target to build an object file
+PETScExample.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.exe.dir/build.make CMakeFiles/Main.exe.dir/PETScExample.cpp.o
+.PHONY : PETScExample.cpp.o
+
+PETScExample.i: PETScExample.cpp.i
+.PHONY : PETScExample.i
+
+# target to preprocess a source file
+PETScExample.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.exe.dir/build.make CMakeFiles/Main.exe.dir/PETScExample.cpp.i
+.PHONY : PETScExample.cpp.i
+
+PETScExample.s: PETScExample.cpp.s
+.PHONY : PETScExample.s
+
+# target to generate assembly for a file
+PETScExample.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.exe.dir/build.make CMakeFiles/Main.exe.dir/PETScExample.cpp.s
+.PHONY : PETScExample.cpp.s
+
+Test.o: Test.cpp.o
+.PHONY : Test.o
+
+# target to build an object file
+Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.exe.dir/build.make CMakeFiles/Test.exe.dir/Test.cpp.o
+.PHONY : Test.cpp.o
+
+Test.i: Test.cpp.i
+.PHONY : Test.i
+
+# target to preprocess a source file
+Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.exe.dir/build.make CMakeFiles/Test.exe.dir/Test.cpp.i
+.PHONY : Test.cpp.i
+
+Test.s: Test.cpp.s
+.PHONY : Test.s
+
+# target to generate assembly for a file
+Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.exe.dir/build.make CMakeFiles/Test.exe.dir/Test.cpp.s
+.PHONY : Test.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -161,7 +304,24 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... Main.exe"
+	@echo "... Test.exe"
+	@echo "... GenericExample.o"
+	@echo "... GenericExample.i"
+	@echo "... GenericExample.s"
+	@echo "... HyperExample.o"
+	@echo "... HyperExample.i"
+	@echo "... HyperExample.s"
+	@echo "... LocalLinearAlgebra.o"
+	@echo "... LocalLinearAlgebra.i"
+	@echo "... LocalLinearAlgebra.s"
+	@echo "... PETScExample.o"
+	@echo "... PETScExample.i"
+	@echo "... PETScExample.s"
+	@echo "... Test.o"
+	@echo "... Test.i"
+	@echo "... Test.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

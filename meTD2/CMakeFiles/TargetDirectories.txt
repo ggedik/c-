@@ -1,3 +1,5 @@
-/home/gg/gg/chps2022/TDs/meTD2/CMakeFiles/Main.exe.dir
-/home/gg/gg/chps2022/TDs/meTD2/CMakeFiles/edit_cache.dir
-/home/gg/gg/chps2022/TDs/meTD2/CMakeFiles/rebuild_cache.dir
+/home/gg/gg/chps2022/TDs/c-/meTD2/CMakeFiles/Main.exe.dir
+/home/gg/gg/chps2022/TDs/c-/meTD2/CMakeFiles/Test.exe.dir
+/home/gg/gg/chps2022/TDs/c-/meTD2/CMakeFiles/test.dir
+/home/gg/gg/chps2022/TDs/c-/meTD2/CMakeFiles/edit_cache.dir
+/home/gg/gg/chps2022/TDs/c-/meTD2/CMakeFiles/rebuild_cache.dir

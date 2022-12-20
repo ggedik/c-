@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gg/gg/chps2022/TDs/meTD2
+CMAKE_SOURCE_DIR = /home/gg/gg/chps2022/TDs/c-/meTD2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gg/gg/chps2022/TDs/meTD2
+CMAKE_BINARY_DIR = /home/gg/gg/chps2022/TDs/c-/meTD2
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Main.exe.dir/depend.make
@@ -72,28 +72,92 @@ include CMakeFiles/Main.exe.dir/flags.make
 CMakeFiles/Main.exe.dir/main.cpp.o: CMakeFiles/Main.exe.dir/flags.make
 CMakeFiles/Main.exe.dir/main.cpp.o: main.cpp
 CMakeFiles/Main.exe.dir/main.cpp.o: CMakeFiles/Main.exe.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gg/gg/chps2022/TDs/meTD2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Main.exe.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main.exe.dir/main.cpp.o -MF CMakeFiles/Main.exe.dir/main.cpp.o.d -o CMakeFiles/Main.exe.dir/main.cpp.o -c /home/gg/gg/chps2022/TDs/meTD2/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gg/gg/chps2022/TDs/c-/meTD2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Main.exe.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main.exe.dir/main.cpp.o -MF CMakeFiles/Main.exe.dir/main.cpp.o.d -o CMakeFiles/Main.exe.dir/main.cpp.o -c /home/gg/gg/chps2022/TDs/c-/meTD2/main.cpp
 
 CMakeFiles/Main.exe.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Main.exe.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gg/gg/chps2022/TDs/meTD2/main.cpp > CMakeFiles/Main.exe.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gg/gg/chps2022/TDs/c-/meTD2/main.cpp > CMakeFiles/Main.exe.dir/main.cpp.i
 
 CMakeFiles/Main.exe.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Main.exe.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gg/gg/chps2022/TDs/meTD2/main.cpp -o CMakeFiles/Main.exe.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gg/gg/chps2022/TDs/c-/meTD2/main.cpp -o CMakeFiles/Main.exe.dir/main.cpp.s
+
+CMakeFiles/Main.exe.dir/HyperExample.cpp.o: CMakeFiles/Main.exe.dir/flags.make
+CMakeFiles/Main.exe.dir/HyperExample.cpp.o: HyperExample.cpp
+CMakeFiles/Main.exe.dir/HyperExample.cpp.o: CMakeFiles/Main.exe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gg/gg/chps2022/TDs/c-/meTD2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Main.exe.dir/HyperExample.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main.exe.dir/HyperExample.cpp.o -MF CMakeFiles/Main.exe.dir/HyperExample.cpp.o.d -o CMakeFiles/Main.exe.dir/HyperExample.cpp.o -c /home/gg/gg/chps2022/TDs/c-/meTD2/HyperExample.cpp
+
+CMakeFiles/Main.exe.dir/HyperExample.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Main.exe.dir/HyperExample.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gg/gg/chps2022/TDs/c-/meTD2/HyperExample.cpp > CMakeFiles/Main.exe.dir/HyperExample.cpp.i
+
+CMakeFiles/Main.exe.dir/HyperExample.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Main.exe.dir/HyperExample.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gg/gg/chps2022/TDs/c-/meTD2/HyperExample.cpp -o CMakeFiles/Main.exe.dir/HyperExample.cpp.s
+
+CMakeFiles/Main.exe.dir/PETScExample.cpp.o: CMakeFiles/Main.exe.dir/flags.make
+CMakeFiles/Main.exe.dir/PETScExample.cpp.o: PETScExample.cpp
+CMakeFiles/Main.exe.dir/PETScExample.cpp.o: CMakeFiles/Main.exe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gg/gg/chps2022/TDs/c-/meTD2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Main.exe.dir/PETScExample.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main.exe.dir/PETScExample.cpp.o -MF CMakeFiles/Main.exe.dir/PETScExample.cpp.o.d -o CMakeFiles/Main.exe.dir/PETScExample.cpp.o -c /home/gg/gg/chps2022/TDs/c-/meTD2/PETScExample.cpp
+
+CMakeFiles/Main.exe.dir/PETScExample.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Main.exe.dir/PETScExample.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gg/gg/chps2022/TDs/c-/meTD2/PETScExample.cpp > CMakeFiles/Main.exe.dir/PETScExample.cpp.i
+
+CMakeFiles/Main.exe.dir/PETScExample.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Main.exe.dir/PETScExample.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gg/gg/chps2022/TDs/c-/meTD2/PETScExample.cpp -o CMakeFiles/Main.exe.dir/PETScExample.cpp.s
+
+CMakeFiles/Main.exe.dir/LocalLinearAlgebra.cpp.o: CMakeFiles/Main.exe.dir/flags.make
+CMakeFiles/Main.exe.dir/LocalLinearAlgebra.cpp.o: LocalLinearAlgebra.cpp
+CMakeFiles/Main.exe.dir/LocalLinearAlgebra.cpp.o: CMakeFiles/Main.exe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gg/gg/chps2022/TDs/c-/meTD2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Main.exe.dir/LocalLinearAlgebra.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main.exe.dir/LocalLinearAlgebra.cpp.o -MF CMakeFiles/Main.exe.dir/LocalLinearAlgebra.cpp.o.d -o CMakeFiles/Main.exe.dir/LocalLinearAlgebra.cpp.o -c /home/gg/gg/chps2022/TDs/c-/meTD2/LocalLinearAlgebra.cpp
+
+CMakeFiles/Main.exe.dir/LocalLinearAlgebra.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Main.exe.dir/LocalLinearAlgebra.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gg/gg/chps2022/TDs/c-/meTD2/LocalLinearAlgebra.cpp > CMakeFiles/Main.exe.dir/LocalLinearAlgebra.cpp.i
+
+CMakeFiles/Main.exe.dir/LocalLinearAlgebra.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Main.exe.dir/LocalLinearAlgebra.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gg/gg/chps2022/TDs/c-/meTD2/LocalLinearAlgebra.cpp -o CMakeFiles/Main.exe.dir/LocalLinearAlgebra.cpp.s
+
+CMakeFiles/Main.exe.dir/GenericExample.cpp.o: CMakeFiles/Main.exe.dir/flags.make
+CMakeFiles/Main.exe.dir/GenericExample.cpp.o: GenericExample.cpp
+CMakeFiles/Main.exe.dir/GenericExample.cpp.o: CMakeFiles/Main.exe.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gg/gg/chps2022/TDs/c-/meTD2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Main.exe.dir/GenericExample.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Main.exe.dir/GenericExample.cpp.o -MF CMakeFiles/Main.exe.dir/GenericExample.cpp.o.d -o CMakeFiles/Main.exe.dir/GenericExample.cpp.o -c /home/gg/gg/chps2022/TDs/c-/meTD2/GenericExample.cpp
+
+CMakeFiles/Main.exe.dir/GenericExample.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Main.exe.dir/GenericExample.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gg/gg/chps2022/TDs/c-/meTD2/GenericExample.cpp > CMakeFiles/Main.exe.dir/GenericExample.cpp.i
+
+CMakeFiles/Main.exe.dir/GenericExample.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Main.exe.dir/GenericExample.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gg/gg/chps2022/TDs/c-/meTD2/GenericExample.cpp -o CMakeFiles/Main.exe.dir/GenericExample.cpp.s
 
 # Object files for target Main.exe
 Main_exe_OBJECTS = \
-"CMakeFiles/Main.exe.dir/main.cpp.o"
+"CMakeFiles/Main.exe.dir/main.cpp.o" \
+"CMakeFiles/Main.exe.dir/HyperExample.cpp.o" \
+"CMakeFiles/Main.exe.dir/PETScExample.cpp.o" \
+"CMakeFiles/Main.exe.dir/LocalLinearAlgebra.cpp.o" \
+"CMakeFiles/Main.exe.dir/GenericExample.cpp.o"
 
 # External object files for target Main.exe
 Main_exe_EXTERNAL_OBJECTS =
 
 Main.exe: CMakeFiles/Main.exe.dir/main.cpp.o
+Main.exe: CMakeFiles/Main.exe.dir/HyperExample.cpp.o
+Main.exe: CMakeFiles/Main.exe.dir/PETScExample.cpp.o
+Main.exe: CMakeFiles/Main.exe.dir/LocalLinearAlgebra.cpp.o
+Main.exe: CMakeFiles/Main.exe.dir/GenericExample.cpp.o
 Main.exe: CMakeFiles/Main.exe.dir/build.make
 Main.exe: CMakeFiles/Main.exe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gg/gg/chps2022/TDs/meTD2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Main.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gg/gg/chps2022/TDs/c-/meTD2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Main.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Main.exe.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -105,6 +169,6 @@ CMakeFiles/Main.exe.dir/clean:
 .PHONY : CMakeFiles/Main.exe.dir/clean
 
 CMakeFiles/Main.exe.dir/depend:
-	cd /home/gg/gg/chps2022/TDs/meTD2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gg/gg/chps2022/TDs/meTD2 /home/gg/gg/chps2022/TDs/meTD2 /home/gg/gg/chps2022/TDs/meTD2 /home/gg/gg/chps2022/TDs/meTD2 /home/gg/gg/chps2022/TDs/meTD2/CMakeFiles/Main.exe.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gg/gg/chps2022/TDs/c-/meTD2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gg/gg/chps2022/TDs/c-/meTD2 /home/gg/gg/chps2022/TDs/c-/meTD2 /home/gg/gg/chps2022/TDs/c-/meTD2 /home/gg/gg/chps2022/TDs/c-/meTD2 /home/gg/gg/chps2022/TDs/c-/meTD2/CMakeFiles/Main.exe.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Main.exe.dir/depend
 

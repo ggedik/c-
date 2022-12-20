@@ -2,6 +2,8 @@
 #include <vector>
 #include <cmath>
 #include "AlienMock.h"
+
+//only the declarations 
 class LocalLinearAlgebra{
 public: 
 
@@ -17,9 +19,9 @@ public:
     std::vector<double> mult(std::vector<double>& matrix, std::vector<double>& x_local);
 
     std::vector<double>& copy(Alien::Vector& tmp_local,std::vector<double>& r_local );
-        //overloading copy vector: couldnt decide whether use template
-        std::vector<double>& copy(std::vector<double> const& tmp_local,std::vector<double>& r_local );
-        std::vector<double>& axpy(double a, std::vector<double>& b_local, std::vector<double>& r_local);
+        
+    std::vector<double>& copy(std::vector<double> const& tmp_local,std::vector<double>& r_local );
+    std::vector<double>& axpy(double a, std::vector<double>& b_local, std::vector<double>& r_local);
     double norm2(std::vector<double> r_local);
     };
 };
